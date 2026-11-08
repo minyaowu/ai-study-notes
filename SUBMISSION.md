@@ -16,9 +16,11 @@ https://github.com/minyaowu/ai-study-notes
 
 ## 3. 網頁連結
 
-https://ai-study-notes-01a18790.hinton-yuntech.chatgpt.site
+https://minyaowu.github.io/ai-study-notes/
 
-發布狀態：部署驗證中，完成後更新。
+發布狀態：GitHub Pages 已完成發布，並已實際開啟首頁確認三篇講義與九張卡片。
+
+備用公開網址：https://ai-study-notes-01a18790.hinton-yuntech.chatgpt.site
 
 ## 4. AGENTS.md
 
@@ -56,6 +58,7 @@ https://ai-study-notes-01a18790.hinton-yuntech.chatgpt.site
 - [新增主題實作紀錄](evidence/extension-demo.md)
 - [新增前指紋](evidence/before.json)
 - [新增後指紋](evidence/after.json)
+- [操作檢查與成果截圖](evidence/verification.md)
 
 這項紀錄由同一位 AI 助理實際執行，沒有宣稱由其他獨立代理完成，也不代表任何未來新增都不需檢查。
 

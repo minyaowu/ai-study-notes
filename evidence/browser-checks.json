@@ -1,0 +1,66 @@
+{
+  "note": "對話框關閉事件完成後再確認重設結果；不把事件完成前的取樣當作產品錯誤。",
+  "checks": [
+    {
+      "test": "搜尋指定主題",
+      "visible": [
+        "02使用方法\n        提示詞設計把腦中的需求，寫成模型能依循的具體任務。\n        5 分鐘閱讀 · 3 張卡↗"
+      ]
+    },
+    {
+      "test": "搜尋無結果",
+      "passed": true
+    },
+    {
+      "test": "答案初始隱藏",
+      "passed": true
+    },
+    {
+      "test": "翻卡顯示答案",
+      "answer": "文字、圖像等內容。",
+      "passed": true
+    },
+    {
+      "test": "自評更新與換卡",
+      "count": "01",
+      "question": "訓練與推論的主要差別是什麼？"
+    },
+    {
+      "test": "重新整理保留進度",
+      "count": "01"
+    },
+    {
+      "test": "主題篩選",
+      "counter": "01 / 03",
+      "question": "提示詞可以包含哪些內容？"
+    },
+    {
+      "test": "需再複習篩選",
+      "counter": "01 / 01",
+      "question": "提示詞可以包含哪些內容？"
+    },
+    {
+      "test": "新增第三主題與引用",
+      "counter": "01 / 03",
+      "source": "topics/hallucination-checking.html#p1",
+      "evidence": "AI 幻覺是模型產生看似可信、實際上錯誤或缺乏依據的內容。"
+    },
+    {
+      "test": "取消重設保留進度",
+      "count": "01"
+    },
+    {
+      "test": "確認重設（等待對話框關閉後複核）",
+      "count": "00",
+      "passed": true
+    },
+    {
+      "test": "鍵盤 Enter 揭示答案（事件完成後）",
+      "passed": true
+    },
+    {
+      "test": "手機 390px 首頁無水平溢位",
+      "passed": true
+    }
+  ]
+}

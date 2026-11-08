@@ -5,10 +5,14 @@
 ## 成果連結
 
 - GitHub Repository：https://github.com/minyaowu/ai-study-notes
-- 公開網站（部署驗證中）：https://ai-study-notes-01a18790.hinton-yuntech.chatgpt.site
+- 公開網站：https://minyaowu.github.io/ai-study-notes/
+- 備用公開網站：https://ai-study-notes-01a18790.hinton-yuntech.chatgpt.site
 - 開發規則：[AGENTS.md](AGENTS.md)
 - 作業繳交說明：[SUBMISSION.md](SUBMISSION.md)
 - 擴充實證：[evidence/extension-demo.md](evidence/extension-demo.md)
+- 驗證結果與畫面：[evidence/verification.md](evidence/verification.md)
+
+![公開網站首頁](evidence/public-home.jpg)
 
 ## 本機執行
 

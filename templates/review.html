@@ -1,0 +1,7 @@
+<div class="page-wrap review-page">
+  <header class="review-heading"><div><p class="eyebrow">每次一張，慢慢記住</p><h1>翻卡複習</h1><p>先回想答案，再對照講義。熟悉程度由你自己判斷。</p></div><div class="progress-overview"><strong><span data-familiar-count>0</span><small> / $card_count</small></strong><span>張卡已熟悉</span></div></header>
+  <div class="review-tools"><label>選擇主題<select data-topic-filter>$options</select></label><label class="checkbox-label"><input type="checkbox" data-only-again>只看需再複習</label><a class="text-link" href="data/cards.json" download="ai-study-cards.json">下載卡組 ↓</a></div>
+  <div class="review-stage">$deck</div>
+  <div class="review-bottom"><p>自評紀錄只保存在這個瀏覽器，不會上傳。</p><div><button type="button" class="text-button" data-export-progress>匯出自評紀錄 ↓</button><button type="button" class="text-button subtle" data-reset-progress>重設進度</button></div></div>
+  <dialog data-reset-dialog><form method="dialog"><h2>重設所有複習進度？</h2><p>這會清除這個瀏覽器保存的自評紀錄，講義與卡片仍可閱讀。</p><div class="dialog-actions"><button class="button button-outline" value="cancel">取消</button><button class="button button-dark" value="confirm">確定重設</button></div></form></dialog>
+</div>

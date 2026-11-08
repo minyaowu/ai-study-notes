@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.local/
+.evidence/
+dist/
+*.zip
+.DS_Store
+Thumbs.db

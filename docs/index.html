@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="用短篇講義理解 AI 概念，再以附原文依據的卡片自我複習。">
+  <meta name="theme-color" content="#244C3D">
+  <title>AI 學習筆記館</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" width="38" height="38" alt=""><span>AI 學習筆記館<small>一個概念，一張複習卡。</small></span></a>
+    <nav aria-label="主要導覽"><a class="active" href="index.html#topics">主題筆記</a><a  href="review.html">翻卡複習</a><a  href="about.html">關於本站</a></nav>
+  </div></header>
+  <main id="main"><div class="page-wrap">
+  <section class="hero">
+    <div class="hero-copy"><p class="eyebrow"><span class="tiny-line"></span> 給正在認識 AI 的你</p>
+      <h1>把概念讀懂，<br>再用一張卡<span class="highlight">記住。</span></h1>
+      <p class="hero-description">把零散的 AI 知識整理成短篇筆記。<br>先閱讀、再回想，每張卡都有能回頭核對的原文。</p>
+      <div class="hero-actions"><a class="button button-dark" href="topics/generative-ai.html">從第一篇開始 <span aria-hidden="true">↗</span></a><a class="text-link" href="review.html">直接翻卡複習 <span aria-hidden="true">→</span></a></div>
+      <div class="hero-facts"><div><strong>03</strong><span>篇主題筆記</span></div><div><strong>09</strong><span>張問答卡片</span></div><div><strong data-familiar-count>0</strong><span>張已熟悉</span></div></div>
+    </div>
+    <div class="hero-card-wrap"><div class="hero-card-heading"><span>先來試一張</span><span class="mini-stars" aria-hidden="true">✳</span></div><section class="deck deck-preview" data-deck aria-label="範例卡片">
+      <div class="deck-meta"><span data-deck-topic></span><span data-deck-counter></span></div>
+      <div class="question-area"><span class="eyebrow">先試著回想</span><h2 data-question tabindex="-1"></h2></div>
+      <button type="button" class="button button-dark reveal-button" data-reveal aria-expanded="false">顯示答案 <span aria-hidden="true">↗</span></button>
+      <div class="answer-area" data-answer-area hidden><span class="eyebrow">參考答案</span><p data-answer></p>
+      <details><summary>查看講義依據</summary><blockquote data-evidence></blockquote><a data-source>回到講義原文 <span aria-hidden="true">↗</span></a></details></div>
+      <div class="self-rating" data-rating hidden><span>這張卡，掌握了嗎？</span><div><button type="button" class="button button-outline" data-rate="again">需再複習</button><button type="button" class="button button-green" data-rate="familiar">已熟悉 <span aria-hidden="true">✓</span></button></div></div>
+      <div class="deck-controls"><button type="button" class="text-button" data-prev aria-label="上一張卡">← 上一張</button><span data-card-state></span><button type="button" class="text-button" data-next aria-label="下一張卡">下一張 →</button></div>
+      <p class="empty-state" data-deck-empty hidden>目前沒有符合條件的卡片。可以切換主題或取消「只看需再複習」。</p>
+      <p class="sr-only" data-deck-status role="status" aria-live="polite"></p>
+    </section><p class="hero-card-note">答案不是終點。試著用自己的話再說一次。</p></div>
+  </section>
+  <section class="topic-catalog" id="topics" aria-labelledby="catalog-title">
+    <div class="catalog-heading"><div><p class="eyebrow">慢慢讀，逐步理解</p><h2 id="catalog-title">今天，想讀哪一篇？</h2></div><label class="search-field"><span class="sr-only">搜尋主題</span><span aria-hidden="true">⌕</span><input type="search" data-search-input placeholder="搜尋主題或關鍵字…" autocomplete="off"></label></div>
+    <div class="topic-list"><article class="topic-row" data-topic-row data-search="生成式 AI 入門 理解模型如何產生內容，也認識需要由人確認的地方。 基礎概念">
+        <span class="topic-number">01</span><div class="topic-copy"><span class="eyebrow">基礎概念</span>
+        <h3><a href="topics/generative-ai.html">生成式 AI 入門</a></h3><p>理解模型如何產生內容，也認識需要由人確認的地方。</p></div>
+        <div class="topic-tail"><span>4 分鐘閱讀 · 3 張卡</span><a class="round-link" href="topics/generative-ai.html" aria-label="閱讀生成式 AI 入門">↗</a></div></article>
+<article class="topic-row" data-topic-row data-search="提示詞設計 把腦中的需求，寫成模型能依循的具體任務。 使用方法">
+        <span class="topic-number">02</span><div class="topic-copy"><span class="eyebrow">使用方法</span>
+        <h3><a href="topics/prompt-design.html">提示詞設計</a></h3><p>把腦中的需求，寫成模型能依循的具體任務。</p></div>
+        <div class="topic-tail"><span>5 分鐘閱讀 · 3 張卡</span><a class="round-link" href="topics/prompt-design.html" aria-label="閱讀提示詞設計">↗</a></div></article>
+<article class="topic-row" data-topic-row data-search="AI 幻覺與資訊查核 把「看起來合理」和「有資料支持」分開確認。 判讀與查核">
+        <span class="topic-number">03</span><div class="topic-copy"><span class="eyebrow">判讀與查核</span>
+        <h3><a href="topics/hallucination-checking.html">AI 幻覺與資訊查核</a></h3><p>把「看起來合理」和「有資料支持」分開確認。</p></div>
+        <div class="topic-tail"><span>5 分鐘閱讀 · 3 張卡</span><a class="round-link" href="topics/hallucination-checking.html" aria-label="閱讀AI 幻覺與資訊查核">↗</a></div></article></div><p class="empty-state" data-search-empty hidden>找不到符合的主題，試試「提示詞」或「AI」。</p><p class="sr-only" role="status" data-search-status></p>
+  </section>
+  <section class="reading-note"><span class="note-symbol" aria-hidden="true">✳</span><div><h2>先回想，再揭曉。</h2><p>閱讀後先回答卡片問題，再揭示答案與講義依據。標記「已熟悉」或「需再複習」，下次從還不熟的地方繼續。</p></div><a href="review.html" class="button button-outline">進入複習 <span aria-hidden="true">→</span></a></section>
+</div>
+</main>
+  <footer class="site-footer">
+    <div><a class="footer-brand" href="index.html">AI 學習筆記館</a><p>讀一點，想一想，把理解留給自己。</p></div>
+    <div class="footer-links"><a href="about.html">使用方式與內容說明</a><span>2026 · 自行整理的概念筆記</span></div>
+  </footer>
+  <p class="storage-notice" data-storage-notice role="status" hidden></p>
+  <script type="application/json" id="study-data">[{"id": "generative-ai-01", "question": "生成式 AI 可以依據輸入產生哪些內容？", "answer": "文字、圖像等內容。", "source_id": "p1", "evidence": "生成式 AI 是能依據輸入產生文字、圖像等內容的模型。", "topic": "generative-ai", "topic_title": "生成式 AI 入門", "source_url": "topics/generative-ai.html#p1"}]</script>
+  <script type="application/json" id="card-ids">["generative-ai-01", "generative-ai-02", "generative-ai-03", "prompt-design-01", "prompt-design-02", "prompt-design-03", "hallucination-checking-01", "hallucination-checking-02", "hallucination-checking-03"]</script>
+  <span hidden data-all-card-count="9"></span>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="理解模型如何產生內容，也認識需要由人確認的地方。">
+  <meta name="theme-color" content="#244C3D">
+  <title>生成式 AI 入門 — AI 學習筆記館</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="../index.html"><img src="../assets/logo.svg" width="38" height="38" alt=""><span>AI 學習筆記館<small>一個概念，一張複習卡。</small></span></a>
+    <nav aria-label="主要導覽"><a class="active" href="../index.html#topics">主題筆記</a><a  href="../review.html">翻卡複習</a><a  href="../about.html">關於本站</a></nav>
+  </div></header>
+  <main id="main"><div class="page-wrap lesson-page">
+  <a class="breadcrumb" href="../index.html#topics">← 回到主題筆記</a>
+  <header class="lesson-header"><p class="eyebrow">基礎概念</p><h1>生成式 AI 入門</h1><p class="lesson-subtitle">理解模型如何產生內容，也認識需要由人確認的地方。</p><div class="lesson-meta"><span>約 4 分鐘閱讀</span><span>3 張複習卡</span><span>更新 2026-11-08</span></div></header>
+  <div class="lesson-layout">
+    <aside class="lesson-toc"><p class="eyebrow">本篇內容</p><nav aria-label="本篇目錄"><a href="#p1">生成內容的工具</a><a href="#p2">訓練與推論</a><a href="#p3">流暢不等於正確</a><a href="#example">實際例子</a><a href="#misconceptions">常見誤解</a><a href="#practice">翻卡複習</a><a href="#references">參考來源</a></nav></aside>
+    <article class="lesson-article">
+      <section class="learning-objectives"><p class="eyebrow">讀完這篇，你將能夠</p><ul><li>說明生成式 AI 的基本用途。</li><li>區分訓練與推論。</li><li>辨認生成內容仍需查核的原因。</li></ul></section>
+      <section class="lesson-section" id="p1"><span class="section-index">01</span><h2>生成內容的工具</h2><p>生成式 AI 是能依據輸入產生文字、圖像等內容的模型。使用者提供需求，模型依學到的模式組合出回應。</p><p>例如請模型提出社團活動標語，輸入是活動條件，輸出是幾個文案初稿。這些初稿仍需要由主辦人挑選與修改。</p></section><section class="lesson-section" id="p2"><span class="section-index">02</span><h2>訓練與推論</h2><p>訓練是利用資料調整模型參數；推論則是使用已訓練的模型，根據新的輸入產生輸出。</p><p>在網站或筆記本中使用既有模型產生一段文字，通常是在執行推論，不表示每次提問都會重新訓練模型。</p></section><section class="lesson-section" id="p3"><span class="section-index">03</span><h2>流暢不等於正確</h2><p>生成內容可能包含錯誤，因此重要資訊需要另外查核。語句自然、格式整齊，不能單獨作為內容正確的證據。</p><p>學習時可讓 AI 協助整理初稿，再對照教材確認定義與例子。涉及日期、引文或數據時，應回到可核對的原始來源。</p></section>
+      <section class="lesson-example" id="example"><p class="eyebrow">把概念放進生活</p><h2>一份社團文案初稿</h2><p>讀書會準備招募新成員，希望先收集幾種標語方向。</p><pre>請為大學生讀書會提供 3 個 12 字以內的招募標語。語氣親切，不要自行加入免費贈品或活動承諾。</pre><p>把 AI 輸出當作候選草稿，再由主辦人確認語氣與事實。這個例子展示生成用途，沒有宣稱模型已理解活動的全部背景。</p></section>
+      <section class="lesson-section" id="misconceptions"><h2>常見誤解</h2><div class="misconception"><h3>AI 回答很有自信，所以一定有查過資料。</h3><p>語氣不能證明查核已發生；需要查看工具實際使用的來源，並自行核對。</p></div><div class="misconception"><h3>每次聊天都等於重新訓練模型。</h3><p>使用已訓練模型回答問題通常屬於推論，與調整模型參數的訓練不同。</p></div></section>
+      <section class="lesson-practice" id="practice"><p class="eyebrow">合上筆記，試著回答</p><h2>用卡片整理你的理解</h2><section class="deck " data-deck aria-label="複習卡">
+      <div class="deck-meta"><span data-deck-topic></span><span data-deck-counter></span></div>
+      <div class="question-area"><span class="eyebrow">先試著回想</span><h2 data-question tabindex="-1"></h2></div>
+      <button type="button" class="button button-dark reveal-button" data-reveal aria-expanded="false">顯示答案 <span aria-hidden="true">↗</span></button>
+      <div class="answer-area" data-answer-area hidden><span class="eyebrow">參考答案</span><p data-answer></p>
+      <details><summary>查看講義依據</summary><blockquote data-evidence></blockquote><a data-source>回到講義原文 <span aria-hidden="true">↗</span></a></details></div>
+      <div class="self-rating" data-rating hidden><span>這張卡，掌握了嗎？</span><div><button type="button" class="button button-outline" data-rate="again">需再複習</button><button type="button" class="button button-green" data-rate="familiar">已熟悉 <span aria-hidden="true">✓</span></button></div></div>
+      <div class="deck-controls"><button type="button" class="text-button" data-prev aria-label="上一張卡">← 上一張</button><span data-card-state></span><button type="button" class="text-button" data-next aria-label="下一張卡">下一張 →</button></div>
+      <p class="empty-state" data-deck-empty hidden>目前沒有符合條件的卡片。可以切換主題或取消「只看需再複習」。</p>
+      <p class="sr-only" data-deck-status role="status" aria-live="polite"></p>
+    </section></section>
+      <section class="references" id="references"><h2>繼續閱讀與核對</h2><p>本站以自己的話整理概念。卡片的原句取自上方講義；以下資料供進一步閱讀。</p><ol><li><a href="https://developers.google.com/machine-learning/glossary" target="_blank" rel="noopener noreferrer">Machine Learning Glossary：生成式 AI、訓練與推論 ↗</a><span>Google for Developers</span></li><li><a href="https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence" target="_blank" rel="noopener noreferrer">Generative AI Profile：生成式 AI 的風險 ↗</a><span>NIST</span></li></ol></section>
+      <nav class="topic-navigation" aria-label="上一篇與下一篇"><a class="next-topic" href="prompt-design.html"><span>下一篇</span>提示詞設計 →</a></nav>
+    </article>
+  </div>
+</div>
+</main>
+  <footer class="site-footer">
+    <div><a class="footer-brand" href="../index.html">AI 學習筆記館</a><p>讀一點，想一想，把理解留給自己。</p></div>
+    <div class="footer-links"><a href="../about.html">使用方式與內容說明</a><span>2026 · 自行整理的概念筆記</span></div>
+  </footer>
+  <p class="storage-notice" data-storage-notice role="status" hidden></p>
+  <script type="application/json" id="study-data">[{"id": "generative-ai-01", "question": "生成式 AI 可以依據輸入產生哪些內容？", "answer": "文字、圖像等內容。", "source_id": "p1", "evidence": "生成式 AI 是能依據輸入產生文字、圖像等內容的模型。", "topic": "generative-ai", "topic_title": "生成式 AI 入門", "source_url": "../topics/generative-ai.html#p1"}, {"id": "generative-ai-02", "question": "訓練與推論的主要差別是什麼？", "answer": "訓練利用資料調整參數；推論使用已訓練模型處理新的輸入。", "source_id": "p2", "evidence": "訓練是利用資料調整模型參數；推論則是使用已訓練的模型，根據新的輸入產生輸出。", "topic": "generative-ai", "topic_title": "生成式 AI 入門", "source_url": "../topics/generative-ai.html#p2"}, {"id": "generative-ai-03", "question": "為什麼生成內容中的重要資訊仍需另外查核？", "answer": "生成內容可能包含錯誤，流暢的語句不能證明內容正確。", "source_id": "p3", "evidence": "生成內容可能包含錯誤，因此重要資訊需要另外查核。", "topic": "generative-ai", "topic_title": "生成式 AI 入門", "source_url": "../topics/generative-ai.html#p3"}]</script>
+  <script type="application/json" id="card-ids">["generative-ai-01", "generative-ai-02", "generative-ai-03", "prompt-design-01", "prompt-design-02", "prompt-design-03", "hallucination-checking-01", "hallucination-checking-02", "hallucination-checking-03"]</script>
+  <span hidden data-all-card-count="9"></span>
+</body>
+</html>

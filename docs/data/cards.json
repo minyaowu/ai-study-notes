@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "cards": [
+    {
+      "id": "generative-ai-01",
+      "question": "生成式 AI 可以依據輸入產生哪些內容？",
+      "answer": "文字、圖像等內容。",
+      "source_id": "p1",
+      "evidence": "生成式 AI 是能依據輸入產生文字、圖像等內容的模型。",
+      "topic": "generative-ai",
+      "topic_title": "生成式 AI 入門",
+      "source_url": "topics/generative-ai.html#p1"
+    },
+    {
+      "id": "generative-ai-02",
+      "question": "訓練與推論的主要差別是什麼？",
+      "answer": "訓練利用資料調整參數；推論使用已訓練模型處理新的輸入。",
+      "source_id": "p2",
+      "evidence": "訓練是利用資料調整模型參數；推論則是使用已訓練的模型，根據新的輸入產生輸出。",
+      "topic": "generative-ai",
+      "topic_title": "生成式 AI 入門",
+      "source_url": "topics/generative-ai.html#p2"
+    },
+    {
+      "id": "generative-ai-03",
+      "question": "為什麼生成內容中的重要資訊仍需另外查核？",
+      "answer": "生成內容可能包含錯誤，流暢的語句不能證明內容正確。",
+      "source_id": "p3",
+      "evidence": "生成內容可能包含錯誤，因此重要資訊需要另外查核。",
+      "topic": "generative-ai",
+      "topic_title": "生成式 AI 入門",
+      "source_url": "topics/generative-ai.html#p3"
+    },
+    {
+      "id": "prompt-design-01",
+      "question": "提示詞可以包含哪些內容？",
+      "answer": "任務、背景、輸出格式與限制條件。",
+      "source_id": "p1",
+      "evidence": "提示詞是使用者提供給模型的輸入，可以包含任務、背景、輸出格式與限制條件。",
+      "topic": "prompt-design",
+      "topic_title": "提示詞設計",
+      "source_url": "topics/prompt-design.html#p1"
+    },
+    {
+      "id": "prompt-design-02",
+      "question": "指定格式與限制後，為什麼仍需檢查輸出？",
+      "answer": "它們有助於表達需求，但不保證生成內容正確。",
+      "source_id": "p2",
+      "evidence": "明確指定輸出格式與限制條件，有助於表達需求，但不保證生成內容一定正確。",
+      "topic": "prompt-design",
+      "topic_title": "提示詞設計",
+      "source_url": "topics/prompt-design.html#p2"
+    },
+    {
+      "id": "prompt-design-03",
+      "question": "比較提示詞時，可以如何控制輸入與評估方式？",
+      "answer": "固定輸入、調整一個條件，並依事先訂好的標準檢查。",
+      "source_id": "p3",
+      "evidence": "比較提示詞時，可以固定輸入內容，調整一個條件，再依事先訂好的標準檢查輸出。",
+      "topic": "prompt-design",
+      "topic_title": "提示詞設計",
+      "source_url": "topics/prompt-design.html#p3"
+    },
+    {
+      "id": "hallucination-checking-01",
+      "question": "AI 幻覺指的是什麼？",
+      "answer": "模型產生看似可信，實際上錯誤或缺乏依據的內容。",
+      "source_id": "p1",
+      "evidence": "AI 幻覺是模型產生看似可信、實際上錯誤或缺乏依據的內容。",
+      "topic": "hallucination-checking",
+      "topic_title": "AI 幻覺與資訊查核",
+      "source_url": "topics/hallucination-checking.html#p1"
+    },
+    {
+      "id": "hallucination-checking-02",
+      "question": "核對來源時，應分別確認哪兩件事？",
+      "answer": "來源是否存在，以及來源內容是否真的支持該說法。",
+      "source_id": "p2",
+      "evidence": "核對一項說法時，應查看來源是否存在，以及來源內容是否真的支持該說法。",
+      "topic": "hallucination-checking",
+      "topic_title": "AI 幻覺與資訊查核",
+      "source_url": "topics/hallucination-checking.html#p2"
+    },
+    {
+      "id": "hallucination-checking-03",
+      "question": "為什麼不能只用原句比對判定問答正確？",
+      "answer": "原句存在不代表問題與答案在語意上對應，仍須閱讀確認。",
+      "source_id": "p3",
+      "evidence": "程式可以比對原句是否存在，但不能只靠這個檢查判定問題與答案的語意正確。",
+      "topic": "hallucination-checking",
+      "topic_title": "AI 幻覺與資訊查核",
+      "source_url": "topics/hallucination-checking.html#p3"
+    }
+  ]
+}

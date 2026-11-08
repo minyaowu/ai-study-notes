@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="$description">
+  <meta name="theme-color" content="#244C3D">
+  <title>$title</title>
+  <link rel="icon" type="image/svg+xml" href="${prefix}assets/logo.svg">
+  <link rel="stylesheet" href="${prefix}assets/styles.css">
+  <script src="${prefix}assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="${prefix}index.html"><img src="${prefix}assets/logo.svg" width="38" height="38" alt=""><span>AI 學習筆記館<small>一個概念，一張複習卡。</small></span></a>
+    <nav aria-label="主要導覽"><a $topics_active href="${prefix}index.html#topics">主題筆記</a><a $review_active href="${prefix}review.html">翻卡複習</a><a $about_active href="${prefix}about.html">關於本站</a></nav>
+  </div></header>
+  <main id="main">$body</main>
+  <footer class="site-footer">
+    <div><a class="footer-brand" href="${prefix}index.html">AI 學習筆記館</a><p>讀一點，想一想，把理解留給自己。</p></div>
+    <div class="footer-links"><a href="${prefix}about.html">使用方式與內容說明</a><span>2026 · 自行整理的概念筆記</span></div>
+  </footer>
+  <p class="storage-notice" data-storage-notice role="status" hidden></p>
+  <script type="application/json" id="study-data">$data</script>
+  <script type="application/json" id="card-ids">$all_card_ids</script>
+  <span hidden data-all-card-count="$total_cards"></span>
+</body>
+</html>

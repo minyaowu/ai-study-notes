@@ -1,0 +1,41 @@
+{
+  "recorded_at_utc": "2026-11-08T09:08:51.316468+00:00",
+  "topics": [
+    "generative-ai",
+    "prompt-design"
+  ],
+  "card_count": 6,
+  "shared_sha256": {
+    "AGENTS.md": "7360fc7b68f7eae09f7c01196ee1ee61350b5fa7f982f31526539f6ed907ffe9",
+    "assets/logo.svg": "6f428395a0831c8eb24797c613fb10bf650ac4e3813bb3e8fb1690304cb89f01",
+    "assets/site.js": "fd7bd13db2a5afa67414f5296e23d6177ecd5c3d9d6cbe9db7ac572d4721b758",
+    "assets/styles.css": "d66b6d78c5280bb93f8e25f39f7d6487a83d938f0c1fef16ea85a1d2e8f1293d",
+    "project.json": "64edbbef3e5d27f315fa192fef0a553857feaf9331a66b4c30299875519aa79c",
+    "schemas/topic.schema.json": "dd4534e8f56d252b1839b1cb56ab0d32b0326ad609de83a357273af596eb3eb5",
+    "scripts/build.py": "4f48a888b7e9971c8d565d3eb2b88244bfb36a8c59cccb60ec6d36f32ab09960",
+    "scripts/extension_evidence.py": "ee005463241e87a4ca6d66d1ecbd4d0cc8e89d4d62e2d6452d5bbb97c6840b43",
+    "templates/about.html": "e87a6fe180278805e6f5f84f236f8c3c25efca55943bedb71bb0f55c74ce8062",
+    "templates/base.html": "5fa66bcf71f5d867c4f76de9abc32fb5b634a752d466202ae9e98ce5d15aa0ca",
+    "templates/index.html": "36776ed769523a060518bb2b2ff86131d75b8a6ecbb2a8d3cbe744d0db709b3a",
+    "templates/review.html": "63a99d1c30676361d1b4994d83abee5c42931eae00d0b76171faa4ee726aa2a7",
+    "templates/topic.example.json": "141ad46b62199a61dea4b3b8822fb932154accd613694e1d6ea33c72e272e631",
+    "templates/topic.html": "9843641c198cea63457c17d7d321ff3b869c06c3797f55c80abb626b8226e73f"
+  },
+  "content_sha256": {
+    "content/generative-ai.json": "07bed4760cb1cece0ab1473b8820e5c3a4dc97c578ec00e87ef749cafde8d881",
+    "content/prompt-design.json": "0675a2b8d8a7c769ef7edf8c977bf1ad4525fdbd78aa17dff56d45e45214e2fd"
+  },
+  "generated_sha256": {
+    "index.html": "4bcdda99cd880f4f8a43e5c1fa4456c0f19e424784640d7aa1a5822ad6e1914d",
+    "topics/generative-ai.html": "ee93f6c34872e56aad603836f55b55493e943930eeafabef844a527d2c059cf7",
+    "topics/prompt-design.html": "9ff4dad01ea0c52962cba31eb38409523d91b8c826acc6d315ece93dbceb5a3e",
+    "review.html": "c395cb065e4c6b886d9284dc7fffa384d203113a9449f254d538b52c0e687093",
+    "about.html": "199bbf7582d001e34694203b00ea95f08e1fae35952fd4cd5dd60a4d773765ce",
+    "data/cards.json": "533195ac79443b99f2ea5eeed8fa50a02b9d403a727bcf5e6e953b8fe72d8439",
+    "project/AGENTS.md": "7360fc7b68f7eae09f7c01196ee1ee61350b5fa7f982f31526539f6ed907ffe9",
+    "assets/styles.css": "d66b6d78c5280bb93f8e25f39f7d6487a83d938f0c1fef16ea85a1d2e8f1293d",
+    "assets/site.js": "fd7bd13db2a5afa67414f5296e23d6177ecd5c3d9d6cbe9db7ac572d4721b758",
+    "assets/logo.svg": "6f428395a0831c8eb24797c613fb10bf650ac4e3813bb3e8fb1690304cb89f01",
+    ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

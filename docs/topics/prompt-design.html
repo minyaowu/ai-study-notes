@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="把腦中的需求，寫成模型能依循的具體任務。">
+  <meta name="theme-color" content="#244C3D">
+  <title>提示詞設計 — AI 學習筆記館</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="../index.html"><img src="../assets/logo.svg" width="38" height="38" alt=""><span>AI 學習筆記館<small>一個概念，一張複習卡。</small></span></a>
+    <nav aria-label="主要導覽"><a class="active" href="../index.html#topics">主題筆記</a><a  href="../review.html">翻卡複習</a><a  href="../about.html">關於本站</a></nav>
+  </div></header>
+  <main id="main"><div class="page-wrap lesson-page">
+  <a class="breadcrumb" href="../index.html#topics">← 回到主題筆記</a>
+  <header class="lesson-header"><p class="eyebrow">使用方法</p><h1>提示詞設計</h1><p class="lesson-subtitle">把腦中的需求，寫成模型能依循的具體任務。</p><div class="lesson-meta"><span>約 5 分鐘閱讀</span><span>3 張複習卡</span><span>更新 2026-11-08</span></div></header>
+  <div class="lesson-layout">
+    <aside class="lesson-toc"><p class="eyebrow">本篇內容</p><nav aria-label="本篇目錄"><a href="#p1">先說清楚任務</a><a href="#p2">格式與限制</a><a href="#p3">一次調整一個條件</a><a href="#example">實際例子</a><a href="#misconceptions">常見誤解</a><a href="#practice">翻卡複習</a><a href="#references">參考來源</a></nav></aside>
+    <article class="lesson-article">
+      <section class="learning-objectives"><p class="eyebrow">讀完這篇，你將能夠</p><ul><li>辨認提示詞中的任務與背景。</li><li>用格式與限制條件表達需求。</li><li>使用同一案例比較修改前後的輸出。</li></ul></section>
+      <section class="lesson-section" id="p1"><span class="section-index">01</span><h2>先說清楚任務</h2><p>提示詞是使用者提供給模型的輸入，可以包含任務、背景、輸出格式與限制條件。</p><p>與其只說「幫我整理」，可以補充「把下面筆記整理成三個重點，給第一次接觸此主題的大學生閱讀」。這能讓期待的工作更具體。</p></section><section class="lesson-section" id="p2"><span class="section-index">02</span><h2>格式與限制</h2><p>明確指定輸出格式與限制條件，有助於表達需求，但不保證生成內容一定正確。</p><p>例如指定繁體中文、三個重點及每點兩句話。若禁止加入筆記之外的資訊，也應直接寫出，完成後仍要檢查是否遵守。</p></section><section class="lesson-section" id="p3"><span class="section-index">03</span><h2>一次調整一個條件</h2><p>比較提示詞時，可以固定輸入內容，調整一個條件，再依事先訂好的標準檢查輸出。</p><p>例如只增加「附上原文依據」，再觀察引文是否存在、是否支持答案。模型有生成變異，單次結果只能當作這個案例的觀察，不能直接推論所有任務。</p></section>
+      <section class="lesson-example" id="example"><p class="eyebrow">把概念放進生活</p><h2>讓筆記整理需求更清楚</h2><p>你有一段課堂筆記，想整理成能快速複習的內容。</p><pre>請只根據以下筆記，用繁體中文整理 3 個重點。每點不超過 2 句，並附一段筆記原句；找不到依據時請說明，不要補寫資料。</pre><p>這個提示指定資料範圍、語言、數量、篇幅與引用方式。仍須檢查重點是否正確，以及引文是否真的支持說明。</p></section>
+      <section class="lesson-section" id="misconceptions"><h2>常見誤解</h2><div class="misconception"><h3>提示詞寫得越長，效果一定越好。</h3><p>長度不是品質指標。清楚、相關且彼此一致的條件，才方便檢查輸出是否符合需求。</p></div><div class="misconception"><h3>要求模型附來源，就能保證來源是真的。</h3><p>附來源只是要求，仍要實際開啟來源並確認內容，不能把模型產生的連結當作已查核。</p></div></section>
+      <section class="lesson-practice" id="practice"><p class="eyebrow">合上筆記，試著回答</p><h2>用卡片整理你的理解</h2><section class="deck " data-deck aria-label="複習卡">
+      <div class="deck-meta"><span data-deck-topic></span><span data-deck-counter></span></div>
+      <div class="question-area"><span class="eyebrow">先試著回想</span><h2 data-question tabindex="-1"></h2></div>
+      <button type="button" class="button button-dark reveal-button" data-reveal aria-expanded="false">顯示答案 <span aria-hidden="true">↗</span></button>
+      <div class="answer-area" data-answer-area hidden><span class="eyebrow">參考答案</span><p data-answer></p>
+      <details><summary>查看講義依據</summary><blockquote data-evidence></blockquote><a data-source>回到講義原文 <span aria-hidden="true">↗</span></a></details></div>
+      <div class="self-rating" data-rating hidden><span>這張卡，掌握了嗎？</span><div><button type="button" class="button button-outline" data-rate="again">需再複習</button><button type="button" class="button button-green" data-rate="familiar">已熟悉 <span aria-hidden="true">✓</span></button></div></div>
+      <div class="deck-controls"><button type="button" class="text-button" data-prev aria-label="上一張卡">← 上一張</button><span data-card-state></span><button type="button" class="text-button" data-next aria-label="下一張卡">下一張 →</button></div>
+      <p class="empty-state" data-deck-empty hidden>目前沒有符合條件的卡片。可以切換主題或取消「只看需再複習」。</p>
+      <p class="sr-only" data-deck-status role="status" aria-live="polite"></p>
+    </section></section>
+      <section class="references" id="references"><h2>繼續閱讀與核對</h2><p>本站以自己的話整理概念。卡片的原句取自上方講義；以下資料供進一步閱讀。</p><ol><li><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/introduction-prompt-design" target="_blank" rel="noopener noreferrer">Introduction to prompting ↗</a><span>Google Cloud</span></li><li><a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices" target="_blank" rel="noopener noreferrer">Prompting best practices ↗</a><span>Anthropic</span></li></ol></section>
+      <nav class="topic-navigation" aria-label="上一篇與下一篇"><a href="generative-ai.html"><span>上一篇</span>生成式 AI 入門 ←</a><a class="next-topic" href="hallucination-checking.html"><span>下一篇</span>AI 幻覺與資訊查核 →</a></nav>
+    </article>
+  </div>
+</div>
+</main>
+  <footer class="site-footer">
+    <div><a class="footer-brand" href="../index.html">AI 學習筆記館</a><p>讀一點，想一想，把理解留給自己。</p></div>
+    <div class="footer-links"><a href="../about.html">使用方式與內容說明</a><span>2026 · 自行整理的概念筆記</span></div>
+  </footer>
+  <p class="storage-notice" data-storage-notice role="status" hidden></p>
+  <script type="application/json" id="study-data">[{"id": "prompt-design-01", "question": "提示詞可以包含哪些內容？", "answer": "任務、背景、輸出格式與限制條件。", "source_id": "p1", "evidence": "提示詞是使用者提供給模型的輸入，可以包含任務、背景、輸出格式與限制條件。", "topic": "prompt-design", "topic_title": "提示詞設計", "source_url": "../topics/prompt-design.html#p1"}, {"id": "prompt-design-02", "question": "指定格式與限制後，為什麼仍需檢查輸出？", "answer": "它們有助於表達需求，但不保證生成內容正確。", "source_id": "p2", "evidence": "明確指定輸出格式與限制條件，有助於表達需求，但不保證生成內容一定正確。", "topic": "prompt-design", "topic_title": "提示詞設計", "source_url": "../topics/prompt-design.html#p2"}, {"id": "prompt-design-03", "question": "比較提示詞時，可以如何控制輸入與評估方式？", "answer": "固定輸入、調整一個條件，並依事先訂好的標準檢查。", "source_id": "p3", "evidence": "比較提示詞時，可以固定輸入內容，調整一個條件，再依事先訂好的標準檢查輸出。", "topic": "prompt-design", "topic_title": "提示詞設計", "source_url": "../topics/prompt-design.html#p3"}]</script>
+  <script type="application/json" id="card-ids">["generative-ai-01", "generative-ai-02", "generative-ai-03", "prompt-design-01", "prompt-design-02", "prompt-design-03", "hallucination-checking-01", "hallucination-checking-02", "hallucination-checking-03"]</script>
+  <span hidden data-all-card-count="9"></span>
+</body>
+</html>

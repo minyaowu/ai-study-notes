@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="了解如何使用講義、翻卡與本機自評紀錄，以及本站的內容規則。">
+  <meta name="theme-color" content="#244C3D">
+  <title>關於本站 — AI 學習筆記館</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" width="38" height="38" alt=""><span>AI 學習筆記館<small>一個概念，一張複習卡。</small></span></a>
+    <nav aria-label="主要導覽"><a  href="index.html#topics">主題筆記</a><a  href="review.html">翻卡複習</a><a class="active" aria-current="page" href="about.html">關於本站</a></nav>
+  </div></header>
+  <main id="main"><div class="page-wrap about-page">
+  <header class="lesson-header"><p class="eyebrow">關於這間小小筆記館</p><h1>讓理解，有地方留下來。</h1><p class="lesson-subtitle">把 AI 概念整理成能閱讀、能核對、也能反覆複習的內容。</p></header>
+  <div class="about-columns"><section><h2>怎麼使用？</h2><ol class="steps"><li><strong>挑一篇筆記</strong><p>從 3 個主題中選擇感興趣的概念，閱讀說明、例子與常見誤解。</p></li><li><strong>先回答，再翻卡</strong><p>用自己的話回答問題，再查看參考答案及講義原句。全站共有 9 張問答卡。</p></li><li><strong>記下熟悉程度</strong><p>標記「已熟悉」或「需再複習」，下次可篩選還需要練習的卡片。</p></li></ol></section>
+  <section><h2>關於內容與資料</h2><p>講義與例題為本專案重新整理，AI 協助內容撰寫與網站開發。各篇末尾保留參考來源，方便你回到原始資料核對。</p><p>這裡提供整理好的講義與卡片。網站不接收個人筆記，也不在瀏覽時呼叫 AI 模型。</p><p>自評僅存在瀏覽器 localStorage。清除瀏覽資料、改用另一個瀏覽器或網址，紀錄可能不同；可在複習頁匯出紀錄備份。</p><p>卡片採自評，來源原句供核對使用，不是自動判定理解程度或答案正確的評分系統。</p></section></div>
+  <section class="about-project"><p class="eyebrow">讓下一篇，也能沿用相同方式</p><h2>一套規則，繼續寫下去。</h2><p>這份作業把頁面版型與內容分開。新增主題時，依專案規則準備內容檔，再執行建置，就能產生結構一致的主題頁，並更新首頁與複習卡。</p><div class="about-project-links"><a class="button button-dark" href="project/AGENTS.md">閱讀 AGENTS.md ↗</a><a class="text-link" href="https://github.com/minyaowu/ai-study-notes" target="_blank" rel="noopener noreferrer">GitHub 原始碼 ↗</a></div></section>
+</div>
+</main>
+  <footer class="site-footer">
+    <div><a class="footer-brand" href="index.html">AI 學習筆記館</a><p>讀一點，想一想，把理解留給自己。</p></div>
+    <div class="footer-links"><a href="about.html">使用方式與內容說明</a><span>2026 · 自行整理的概念筆記</span></div>
+  </footer>
+  <p class="storage-notice" data-storage-notice role="status" hidden></p>
+  <script type="application/json" id="study-data">[]</script>
+  <script type="application/json" id="card-ids">["generative-ai-01", "generative-ai-02", "generative-ai-03", "prompt-design-01", "prompt-design-02", "prompt-design-03", "hallucination-checking-01", "hallucination-checking-02", "hallucination-checking-03"]</script>
+  <span hidden data-all-card-count="9"></span>
+</body>
+</html>

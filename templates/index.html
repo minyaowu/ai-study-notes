@@ -1,0 +1,16 @@
+<div class="page-wrap">
+  <section class="hero">
+    <div class="hero-copy"><p class="eyebrow"><span class="tiny-line"></span> 給正在認識 AI 的你</p>
+      <h1>把概念讀懂，<br>再用一張卡<span class="highlight">記住。</span></h1>
+      <p class="hero-description">把零散的 AI 知識整理成短篇筆記。<br>先閱讀、再回想，每張卡都有能回頭核對的原文。</p>
+      <div class="hero-actions"><a class="button button-dark" href="topics/$first_slug.html">從第一篇開始 <span aria-hidden="true">↗</span></a><a class="text-link" href="review.html">直接翻卡複習 <span aria-hidden="true">→</span></a></div>
+      <div class="hero-facts"><div><strong>$topic_count</strong><span>篇主題筆記</span></div><div><strong>$card_count</strong><span>張問答卡片</span></div><div><strong data-familiar-count>0</strong><span>張已熟悉</span></div></div>
+    </div>
+    <div class="hero-card-wrap"><div class="hero-card-heading"><span>先來試一張</span><span class="mini-stars" aria-hidden="true">✳</span></div>$deck<p class="hero-card-note">答案不是終點。試著用自己的話再說一次。</p></div>
+  </section>
+  <section class="topic-catalog" id="topics" aria-labelledby="catalog-title">
+    <div class="catalog-heading"><div><p class="eyebrow">慢慢讀，逐步理解</p><h2 id="catalog-title">今天，想讀哪一篇？</h2></div><label class="search-field"><span class="sr-only">搜尋主題</span><span aria-hidden="true">⌕</span><input type="search" data-search-input placeholder="搜尋主題或關鍵字…" autocomplete="off"></label></div>
+    <div class="topic-list">$rows</div><p class="empty-state" data-search-empty hidden>找不到符合的主題，試試「提示詞」或「AI」。</p><p class="sr-only" role="status" data-search-status></p>
+  </section>
+  <section class="reading-note"><span class="note-symbol" aria-hidden="true">✳</span><div><h2>先回想，再揭曉。</h2><p>閱讀後先回答卡片問題，再揭示答案與講義依據。標記「已熟悉」或「需再複習」，下次從還不熟的地方繼續。</p></div><a href="review.html" class="button button-outline">進入複習 <span aria-hidden="true">→</span></a></section>
+</div>

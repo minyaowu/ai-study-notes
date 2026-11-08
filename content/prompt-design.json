@@ -1,0 +1,29 @@
+{
+  "slug": "prompt-design",
+  "title": "提示詞設計",
+  "subtitle": "把腦中的需求，寫成模型能依循的具體任務。",
+  "category": "使用方法",
+  "order": 2,
+  "reading_minutes": 5,
+  "updated": "2026-11-08",
+  "objectives": ["辨認提示詞中的任務與背景。", "用格式與限制條件表達需求。", "使用同一案例比較修改前後的輸出。"],
+  "sections": [
+    {"id": "p1", "title": "先說清楚任務", "paragraphs": ["提示詞是使用者提供給模型的輸入，可以包含任務、背景、輸出格式與限制條件。", "與其只說「幫我整理」，可以補充「把下面筆記整理成三個重點，給第一次接觸此主題的大學生閱讀」。這能讓期待的工作更具體。"]},
+    {"id": "p2", "title": "格式與限制", "paragraphs": ["明確指定輸出格式與限制條件，有助於表達需求，但不保證生成內容一定正確。", "例如指定繁體中文、三個重點及每點兩句話。若禁止加入筆記之外的資訊，也應直接寫出，完成後仍要檢查是否遵守。"]},
+    {"id": "p3", "title": "一次調整一個條件", "paragraphs": ["比較提示詞時，可以固定輸入內容，調整一個條件，再依事先訂好的標準檢查輸出。", "例如只增加「附上原文依據」，再觀察引文是否存在、是否支持答案。模型有生成變異，單次結果只能當作這個案例的觀察，不能直接推論所有任務。"]}
+  ],
+  "example": {"title": "讓筆記整理需求更清楚", "scenario": "你有一段課堂筆記，想整理成能快速複習的內容。", "prompt": "請只根據以下筆記，用繁體中文整理 3 個重點。每點不超過 2 句，並附一段筆記原句；找不到依據時請說明，不要補寫資料。", "explanation": "這個提示指定資料範圍、語言、數量、篇幅與引用方式。仍須檢查重點是否正確，以及引文是否真的支持說明。"},
+  "misconceptions": [
+    {"myth": "提示詞寫得越長，效果一定越好。", "clarification": "長度不是品質指標。清楚、相關且彼此一致的條件，才方便檢查輸出是否符合需求。"},
+    {"myth": "要求模型附來源，就能保證來源是真的。", "clarification": "附來源只是要求，仍要實際開啟來源並確認內容，不能把模型產生的連結當作已查核。"}
+  ],
+  "cards": [
+    {"id": "prompt-design-01", "question": "提示詞可以包含哪些內容？", "answer": "任務、背景、輸出格式與限制條件。", "source_id": "p1", "evidence": "提示詞是使用者提供給模型的輸入，可以包含任務、背景、輸出格式與限制條件。"},
+    {"id": "prompt-design-02", "question": "指定格式與限制後，為什麼仍需檢查輸出？", "answer": "它們有助於表達需求，但不保證生成內容正確。", "source_id": "p2", "evidence": "明確指定輸出格式與限制條件，有助於表達需求，但不保證生成內容一定正確。"},
+    {"id": "prompt-design-03", "question": "比較提示詞時，可以如何控制輸入與評估方式？", "answer": "固定輸入、調整一個條件，並依事先訂好的標準檢查。", "source_id": "p3", "evidence": "比較提示詞時，可以固定輸入內容，調整一個條件，再依事先訂好的標準檢查輸出。"}
+  ],
+  "references": [
+    {"title": "Introduction to prompting", "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/introduction-prompt-design", "publisher": "Google Cloud"},
+    {"title": "Prompting best practices", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices", "publisher": "Anthropic"}
+  ]
+}

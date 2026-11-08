@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="先回想答案，再揭示講義依據，記下自己的熟悉程度。">
+  <meta name="theme-color" content="#244C3D">
+  <title>翻卡複習 — AI 學習筆記館</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" width="38" height="38" alt=""><span>AI 學習筆記館<small>一個概念，一張複習卡。</small></span></a>
+    <nav aria-label="主要導覽"><a  href="index.html#topics">主題筆記</a><a class="active" aria-current="page" href="review.html">翻卡複習</a><a  href="about.html">關於本站</a></nav>
+  </div></header>
+  <main id="main"><div class="page-wrap review-page">
+  <header class="review-heading"><div><p class="eyebrow">每次一張，慢慢記住</p><h1>翻卡複習</h1><p>先回想答案，再對照講義。熟悉程度由你自己判斷。</p></div><div class="progress-overview"><strong><span data-familiar-count>0</span><small> / 9</small></strong><span>張卡已熟悉</span></div></header>
+  <div class="review-tools"><label>選擇主題<select data-topic-filter><option value="all">全部主題</option><option value="generative-ai">生成式 AI 入門</option><option value="prompt-design">提示詞設計</option><option value="hallucination-checking">AI 幻覺與資訊查核</option></select></label><label class="checkbox-label"><input type="checkbox" data-only-again>只看需再複習</label><a class="text-link" href="data/cards.json" download="ai-study-cards.json">下載卡組 ↓</a></div>
+  <div class="review-stage"><section class="deck " data-deck aria-label="複習卡">
+      <div class="deck-meta"><span data-deck-topic></span><span data-deck-counter></span></div>
+      <div class="question-area"><span class="eyebrow">先試著回想</span><h2 data-question tabindex="-1"></h2></div>
+      <button type="button" class="button button-dark reveal-button" data-reveal aria-expanded="false">顯示答案 <span aria-hidden="true">↗</span></button>
+      <div class="answer-area" data-answer-area hidden><span class="eyebrow">參考答案</span><p data-answer></p>
+      <details><summary>查看講義依據</summary><blockquote data-evidence></blockquote><a data-source>回到講義原文 <span aria-hidden="true">↗</span></a></details></div>
+      <div class="self-rating" data-rating hidden><span>這張卡，掌握了嗎？</span><div><button type="button" class="button button-outline" data-rate="again">需再複習</button><button type="button" class="button button-green" data-rate="familiar">已熟悉 <span aria-hidden="true">✓</span></button></div></div>
+      <div class="deck-controls"><button type="button" class="text-button" data-prev aria-label="上一張卡">← 上一張</button><span data-card-state></span><button type="button" class="text-button" data-next aria-label="下一張卡">下一張 →</button></div>
+      <p class="empty-state" data-deck-empty hidden>目前沒有符合條件的卡片。可以切換主題或取消「只看需再複習」。</p>
+      <p class="sr-only" data-deck-status role="status" aria-live="polite"></p>
+    </section></div>
+  <div class="review-bottom"><p>自評紀錄只保存在這個瀏覽器，不會上傳。</p><div><button type="button" class="text-button" data-export-progress>匯出自評紀錄 ↓</button><button type="button" class="text-button subtle" data-reset-progress>重設進度</button></div></div>
+  <dialog data-reset-dialog><form method="dialog"><h2>重設所有複習進度？</h2><p>這會清除這個瀏覽器保存的自評紀錄，講義與卡片仍可閱讀。</p><div class="dialog-actions"><button class="button button-outline" value="cancel">取消</button><button class="button button-dark" value="confirm">確定重設</button></div></form></dialog>
+</div>
+</main>
+  <footer class="site-footer">
+    <div><a class="footer-brand" href="index.html">AI 學習筆記館</a><p>讀一點，想一想，把理解留給自己。</p></div>
+    <div class="footer-links"><a href="about.html">使用方式與內容說明</a><span>2026 · 自行整理的概念筆記</span></div>
+  </footer>
+  <p class="storage-notice" data-storage-notice role="status" hidden></p>
+  <script type="application/json" id="study-data">[{"id": "generative-ai-01", "question": "生成式 AI 可以依據輸入產生哪些內容？", "answer": "文字、圖像等內容。", "source_id": "p1", "evidence": "生成式 AI 是能依據輸入產生文字、圖像等內容的模型。", "topic": "generative-ai", "topic_title": "生成式 AI 入門", "source_url": "topics/generative-ai.html#p1"}, {"id": "generative-ai-02", "question": "訓練與推論的主要差別是什麼？", "answer": "訓練利用資料調整參數；推論使用已訓練模型處理新的輸入。", "source_id": "p2", "evidence": "訓練是利用資料調整模型參數；推論則是使用已訓練的模型，根據新的輸入產生輸出。", "topic": "generative-ai", "topic_title": "生成式 AI 入門", "source_url": "topics/generative-ai.html#p2"}, {"id": "generative-ai-03", "question": "為什麼生成內容中的重要資訊仍需另外查核？", "answer": "生成內容可能包含錯誤，流暢的語句不能證明內容正確。", "source_id": "p3", "evidence": "生成內容可能包含錯誤，因此重要資訊需要另外查核。", "topic": "generative-ai", "topic_title": "生成式 AI 入門", "source_url": "topics/generative-ai.html#p3"}, {"id": "prompt-design-01", "question": "提示詞可以包含哪些內容？", "answer": "任務、背景、輸出格式與限制條件。", "source_id": "p1", "evidence": "提示詞是使用者提供給模型的輸入，可以包含任務、背景、輸出格式與限制條件。", "topic": "prompt-design", "topic_title": "提示詞設計", "source_url": "topics/prompt-design.html#p1"}, {"id": "prompt-design-02", "question": "指定格式與限制後，為什麼仍需檢查輸出？", "answer": "它們有助於表達需求，但不保證生成內容正確。", "source_id": "p2", "evidence": "明確指定輸出格式與限制條件，有助於表達需求，但不保證生成內容一定正確。", "topic": "prompt-design", "topic_title": "提示詞設計", "source_url": "topics/prompt-design.html#p2"}, {"id": "prompt-design-03", "question": "比較提示詞時，可以如何控制輸入與評估方式？", "answer": "固定輸入、調整一個條件，並依事先訂好的標準檢查。", "source_id": "p3", "evidence": "比較提示詞時，可以固定輸入內容，調整一個條件，再依事先訂好的標準檢查輸出。", "topic": "prompt-design", "topic_title": "提示詞設計", "source_url": "topics/prompt-design.html#p3"}, {"id": "hallucination-checking-01", "question": "AI 幻覺指的是什麼？", "answer": "模型產生看似可信，實際上錯誤或缺乏依據的內容。", "source_id": "p1", "evidence": "AI 幻覺是模型產生看似可信、實際上錯誤或缺乏依據的內容。", "topic": "hallucination-checking", "topic_title": "AI 幻覺與資訊查核", "source_url": "topics/hallucination-checking.html#p1"}, {"id": "hallucination-checking-02", "question": "核對來源時，應分別確認哪兩件事？", "answer": "來源是否存在，以及來源內容是否真的支持該說法。", "source_id": "p2", "evidence": "核對一項說法時，應查看來源是否存在，以及來源內容是否真的支持該說法。", "topic": "hallucination-checking", "topic_title": "AI 幻覺與資訊查核", "source_url": "topics/hallucination-checking.html#p2"}, {"id": "hallucination-checking-03", "question": "為什麼不能只用原句比對判定問答正確？", "answer": "原句存在不代表問題與答案在語意上對應，仍須閱讀確認。", "source_id": "p3", "evidence": "程式可以比對原句是否存在，但不能只靠這個檢查判定問題與答案的語意正確。", "topic": "hallucination-checking", "topic_title": "AI 幻覺與資訊查核", "source_url": "topics/hallucination-checking.html#p3"}]</script>
+  <script type="application/json" id="card-ids">["generative-ai-01", "generative-ai-02", "generative-ai-03", "prompt-design-01", "prompt-design-02", "prompt-design-03", "hallucination-checking-01", "hallucination-checking-02", "hallucination-checking-03"]</script>
+  <span hidden data-all-card-count="9"></span>
+</body>
+</html>

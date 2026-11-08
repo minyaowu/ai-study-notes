@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI 學習筆記館主題",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["slug","title","subtitle","category","order","reading_minutes","updated","objectives","sections","example","misconceptions","cards","references"],
+  "properties": {
+    "slug": {"type":"string","pattern":"^[a-z][a-z0-9]*(-[a-z0-9]+)*$"},
+    "title": {"type":"string","minLength":2,"maxLength":40},
+    "subtitle": {"type":"string","minLength":8,"maxLength":100},
+    "category": {"type":"string","minLength":2,"maxLength":15},
+    "order": {"type":"integer","minimum":1},
+    "reading_minutes": {"type":"integer","minimum":1,"maximum":30},
+    "updated": {"type":"string","format":"date"},
+    "objectives": {"type":"array","minItems":2,"maxItems":4,"items":{"$ref":"#/$defs/text"}},
+    "sections": {"type":"array","minItems":3,"maxItems":6,"items":{"type":"object","additionalProperties":false,"required":["id","title","paragraphs"],"properties":{"id":{"type":"string","pattern":"^p[1-9][0-9]*$"},"title":{"$ref":"#/$defs/text"},"paragraphs":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/text"}}}}},
+    "example": {"type":"object","additionalProperties":false,"required":["title","scenario","prompt","explanation"],"properties":{"title":{"$ref":"#/$defs/text"},"scenario":{"$ref":"#/$defs/text"},"prompt":{"$ref":"#/$defs/text"},"explanation":{"$ref":"#/$defs/text"}}},
+    "misconceptions": {"type":"array","minItems":2,"items":{"type":"object","additionalProperties":false,"required":["myth","clarification"],"properties":{"myth":{"$ref":"#/$defs/text"},"clarification":{"$ref":"#/$defs/text"}}}},
+    "cards": {"type":"array","minItems":3,"maxItems":5,"items":{"type":"object","additionalProperties":false,"required":["id","question","answer","source_id","evidence"],"properties":{"id":{"type":"string","pattern":"^[a-z][a-z0-9-]*-[0-9]{2}$"},"question":{"$ref":"#/$defs/text"},"answer":{"$ref":"#/$defs/text"},"source_id":{"type":"string","pattern":"^p[1-9][0-9]*$"},"evidence":{"type":"string","minLength":8}}}},
+    "references": {"type":"array","minItems":1,"items":{"type":"object","additionalProperties":false,"required":["title","url","publisher"],"properties":{"title":{"$ref":"#/$defs/text"},"url":{"type":"string","pattern":"^https://[^\\s]+$"},"publisher":{"$ref":"#/$defs/text"}}}}
+  },
+  "$defs": {"text":{"type":"string","minLength":1}}
+}

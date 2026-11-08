@@ -1,0 +1,29 @@
+{
+  "slug": "hallucination-checking",
+  "title": "AI 幻覺與資訊查核",
+  "subtitle": "把「看起來合理」和「有資料支持」分開確認。",
+  "category": "判讀與查核",
+  "order": 3,
+  "reading_minutes": 5,
+  "updated": "2026-11-08",
+  "objectives": ["辨識 AI 幻覺的基本意思。", "分別確認來源存在與來源支持。", "說明引用原句檢查的限制。"],
+  "sections": [
+    {"id": "p1", "title": "合理的句子，也可能有錯", "paragraphs": ["AI 幻覺是模型產生看似可信、實際上錯誤或缺乏依據的內容。它可能表現在定義、數字或引用資料中。", "當回答排版完整、語氣肯定時，我們容易忽略其中缺乏證據的部分。應把模型輸出當作需要判讀的內容，而不是已核實的事實。"]},
+    {"id": "p2", "title": "查核分成兩個問題", "paragraphs": ["核對一項說法時，應查看來源是否存在，以及來源內容是否真的支持該說法。", "先實際開啟文件，確認發布者與內容；再閱讀相關段落，判斷是否包含回答所說的資訊。即使網址可以開啟，也可能與該項說法無關。"]},
+    {"id": "p3", "title": "引文是起點，仍要讀懂", "paragraphs": ["程式可以比對原句是否存在，但不能只靠這個檢查判定問題與答案的語意正確。", "例如問題問「提示詞的定義」，答案卻只列出「提示詞可包含的欄位」，即使引用原句存在，問答仍可能不夠精確。需要重新閱讀並修正問題或答案。"]}
+  ],
+  "example": {"title": "筆記沒有寫，就保留空白", "scenario": "提供的筆記只介紹生成式 AI 的用途，沒有列出某個模型的訓練資料量。", "prompt": "請只根據提供的筆記回答：這個模型用了多少筆訓練資料？若筆記沒有資料，請回答「提供的筆記沒有此資訊」，並指出缺少的內容。", "explanation": "這個要求讓資料範圍更明確。實際輸出仍可能未遵守指令，因此要對照筆記，不能把提示詞本身當作已消除幻覺的證據。"},
+  "misconceptions": [
+    {"myth": "附上可以開啟的網址，就代表回答有根據。", "clarification": "網址存在與內容支持是兩件事，必須閱讀來源相關段落再判斷。"},
+    {"myth": "卡片的原句檢查通過，答案就一定正確。", "clarification": "程式只能確認引文存在；問題是否問對、答案是否對應，仍需要閱讀與判斷。"}
+  ],
+  "cards": [
+    {"id": "hallucination-checking-01", "question": "AI 幻覺指的是什麼？", "answer": "模型產生看似可信，實際上錯誤或缺乏依據的內容。", "source_id": "p1", "evidence": "AI 幻覺是模型產生看似可信、實際上錯誤或缺乏依據的內容。"},
+    {"id": "hallucination-checking-02", "question": "核對來源時，應分別確認哪兩件事？", "answer": "來源是否存在，以及來源內容是否真的支持該說法。", "source_id": "p2", "evidence": "核對一項說法時，應查看來源是否存在，以及來源內容是否真的支持該說法。"},
+    {"id": "hallucination-checking-03", "question": "為什麼不能只用原句比對判定問答正確？", "answer": "原句存在不代表問題與答案在語意上對應，仍須閱讀確認。", "source_id": "p3", "evidence": "程式可以比對原句是否存在，但不能只靠這個檢查判定問題與答案的語意正確。"}
+  ],
+  "references": [
+    {"title": "Machine Learning Glossary：hallucination", "url": "https://developers.google.com/machine-learning/glossary#hallucination", "publisher": "Google for Developers"},
+    {"title": "Generative Artificial Intelligence Profile", "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence", "publisher": "NIST"}
+  ]
+}

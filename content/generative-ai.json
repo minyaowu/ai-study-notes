@@ -1,0 +1,29 @@
+{
+  "slug": "generative-ai",
+  "title": "生成式 AI 入門",
+  "subtitle": "理解模型如何產生內容，也認識需要由人確認的地方。",
+  "category": "基礎概念",
+  "order": 1,
+  "reading_minutes": 4,
+  "updated": "2026-11-08",
+  "objectives": ["說明生成式 AI 的基本用途。", "區分訓練與推論。", "辨認生成內容仍需查核的原因。"],
+  "sections": [
+    {"id": "p1", "title": "生成內容的工具", "paragraphs": ["生成式 AI 是能依據輸入產生文字、圖像等內容的模型。使用者提供需求，模型依學到的模式組合出回應。", "例如請模型提出社團活動標語，輸入是活動條件，輸出是幾個文案初稿。這些初稿仍需要由主辦人挑選與修改。"]},
+    {"id": "p2", "title": "訓練與推論", "paragraphs": ["訓練是利用資料調整模型參數；推論則是使用已訓練的模型，根據新的輸入產生輸出。", "在網站或筆記本中使用既有模型產生一段文字，通常是在執行推論，不表示每次提問都會重新訓練模型。"]},
+    {"id": "p3", "title": "流暢不等於正確", "paragraphs": ["生成內容可能包含錯誤，因此重要資訊需要另外查核。語句自然、格式整齊，不能單獨作為內容正確的證據。", "學習時可讓 AI 協助整理初稿，再對照教材確認定義與例子。涉及日期、引文或數據時，應回到可核對的原始來源。"]}
+  ],
+  "example": {"title": "一份社團文案初稿", "scenario": "讀書會準備招募新成員，希望先收集幾種標語方向。", "prompt": "請為大學生讀書會提供 3 個 12 字以內的招募標語。語氣親切，不要自行加入免費贈品或活動承諾。", "explanation": "把 AI 輸出當作候選草稿，再由主辦人確認語氣與事實。這個例子展示生成用途，沒有宣稱模型已理解活動的全部背景。"},
+  "misconceptions": [
+    {"myth": "AI 回答很有自信，所以一定有查過資料。", "clarification": "語氣不能證明查核已發生；需要查看工具實際使用的來源，並自行核對。"},
+    {"myth": "每次聊天都等於重新訓練模型。", "clarification": "使用已訓練模型回答問題通常屬於推論，與調整模型參數的訓練不同。"}
+  ],
+  "cards": [
+    {"id": "generative-ai-01", "question": "生成式 AI 可以依據輸入產生哪些內容？", "answer": "文字、圖像等內容。", "source_id": "p1", "evidence": "生成式 AI 是能依據輸入產生文字、圖像等內容的模型。"},
+    {"id": "generative-ai-02", "question": "訓練與推論的主要差別是什麼？", "answer": "訓練利用資料調整參數；推論使用已訓練模型處理新的輸入。", "source_id": "p2", "evidence": "訓練是利用資料調整模型參數；推論則是使用已訓練的模型，根據新的輸入產生輸出。"},
+    {"id": "generative-ai-03", "question": "為什麼生成內容中的重要資訊仍需另外查核？", "answer": "生成內容可能包含錯誤，流暢的語句不能證明內容正確。", "source_id": "p3", "evidence": "生成內容可能包含錯誤，因此重要資訊需要另外查核。"}
+  ],
+  "references": [
+    {"title": "Machine Learning Glossary：生成式 AI、訓練與推論", "url": "https://developers.google.com/machine-learning/glossary", "publisher": "Google for Developers"},
+    {"title": "Generative AI Profile：生成式 AI 的風險", "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence", "publisher": "NIST"}
+  ]
+}
